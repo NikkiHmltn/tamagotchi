@@ -17,11 +17,12 @@
             </div>
             <!-- tamagotchi character goes here -->
             <div class="stat-container rpgui-container framed-golden-2">
-                <p>Name:</p>
-                <p>Level</p>
+                <p>Name:</p><p class="name-tag"></p>
+                <p>Level</p><p class="level-tag"></p>
             </div>
-            <div>
+            <div class="sprite-container">
                 <!-- rpg character goes here -->
+                <div class="sprite"></div>
             </div>
         </div>
         <div class="rpgstat-container">
@@ -32,7 +33,7 @@
                 <label for="#hp-bar">Health</label>
                 <div id="hp-bar" class="rpgui-progress red" data-rpguitype="progress">
                     <div class="rpgui-progress-track">
-                        <div class="rpgui-progress-fill red"></div>
+                        <div class="rpgui-progress-fill red style-hp"></div>
                     </div>
                     <div class="rpgui-progress-left-edge"></div>
                     <div class="rpgui-progress-right-edge"></div>
@@ -41,7 +42,7 @@
                 <label for="#mana-bar">Mana</label>
                 <div id="mana-bar" class="rpgui-progress blue" data-rpguitype="progress">
                     <div class="rpgui-progress-track">
-                        <div class="rpgui-progress-fill blue"></div>
+                        <div class="rpgui-progress-fill blue style-mana"></div>
                     </div>
                     <div class="rpgui-progress-left-edge"></div>
                     <div class="rpgui-progress-right-edge"></div>
@@ -50,7 +51,7 @@
                 <label for="stamina-bar">Stamina</label>
                 <div id="stamina-bar" class="rpgui-progress green" data-rpguitype="progress">
                     <div class=" rpgui-progress-track">
-                        <div class=" rpgui-progress-fill green">
+                        <div class=" rpgui-progress-fill green style-stamina">
                         </div>
                     </div>
                     <div class=" rpgui-progress-left-edge"></div>
@@ -61,19 +62,19 @@
                 <!-- stat buttons go here -->
                 <div class="rpgui-center">
                     <div class="rpgui-icon potion-red"></div>
-                    <button class="rpgui-button rpgui-cursor-grab-open" type="button" style="width:100%">
+                    <button class="rpgui-button rpgui-cursor-grab-open health-btn" type="button" style="width:100%">
                         <p>Health Potion</p>
                     </button>
                 </div>
                 <div class="rpgui-center">
                     <div class="rpgui-icon potion-blue"></div>
-                    <button class="rpgui-button rpgui-cursor-grab-open" type="button" style="width:100%">
+                    <button class="rpgui-button rpgui-cursor-grab-open mana-btn" type="button" style="width:100%">
                         <p>Mana Potion</p>
                     </button>
                 </div>
                 <div class="rpgui-center">
                     <div class="rpgui-icon potion-green"></div>
-                    <button class="rpgui-button rpgui-cursor-grab-open" type="button" style="width:100%">
+                    <button class="rpgui-button rpgui-cursor-grab-open stamina-btn" type="button" style="width:100%">
                         <p>Stamina Potion</p>
                     </button>
                 </div>
