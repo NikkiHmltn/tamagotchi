@@ -1,5 +1,6 @@
 :root {
     --end-width: -1200px;
+    --end-width-death: -1200px;
 }
 
 body, html {
@@ -74,6 +75,15 @@ body, html {
     filter: drop-shadow(0 0 0.75rem rgb(0, 140, 255));
 }
 
+.sprite-die {
+    height: 150px;
+    width: 150px;
+    background: url(./animation/evo1/Death.png);
+    animation: die 2s steps(8);
+    zoom: 3;
+    filter: drop-shadow(0 0 0.75rem rgb(231, 39, 39));
+}
+
 .tama-background {
     background: url(./animation/night-town-background-previewx2.png) repeat-x;
     height: 560px;
@@ -87,6 +97,15 @@ body, html {
     }
     100% {
         background-position-x: var(--end-width);
+    }
+}
+
+@keyframes die {
+    0%{
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: var(--end-width-death);
     }
 }
 
